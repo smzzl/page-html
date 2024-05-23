@@ -2,6 +2,55 @@
 <html lang=en-us>
 
 <head>
+  <style>
+    .container-tow-col {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        width: 80%;
+        margin: 20px auto;
+        gap: 40px;
+    }
+    .card-tow-col {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 24px 32px rgba(0, 0, 0, 0.25);
+        padding: 20px;
+        width: 90%;
+    }
+    .card-tow-col img{
+        border-radius: 10px;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+    .content-tow-col {
+        flex: 1;
+    }
+    .title-tow-col {
+        color: #1a3e9a;
+        font-weight: bold;
+    }
+    .subtitle-tow-col {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+    .description-tow-col {
+        margin-bottom: 20px;
+    }
+    .button-tow-col {
+        background-color: #00a859;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+  </style>
   <meta charset=utf-8>
   <meta name=viewport content="width=device-width,initial-scale=1">
   <meta http-equiv=X-UA-Compatible content="IE=edge">
@@ -86,7 +135,7 @@
             <ul class="navbar-nav d-md-inline-flex">
               <li class=nav-item><a class=nav-link href=./post><span>News</span></a></li>
               <li class=nav-item><a class=nav-link href=./people><span>People</span></a></li>
-              <li class=nav-item><a class=nav-link href=./event><span>Events</span></a></li>
+              <li class=nav-item><a class=nav-link href=./projects><span>Projects</span></a></li>
               <li class=nav-item><a class=nav-link href=./publication><span>Publications</span></a></li>
               <li class=nav-item><a class=nav-link href=./contact><span>Contact</span></a></li>
             </ul>
@@ -115,8 +164,8 @@
             <div class="wg-hero dark container" style=margin-left:6rem;margin-right:6rem;text-align:right>
               <h1 class=hero-title>中国科学院自动化研究所</h1>
               <p class=hero-lead style=margin-left:auto;margin-right:0>紫东太初大模型研究中心——视频与图像分析组</p>
-              <p><a href=./contact/ class="btn btn-light btn-lg mt-3"><i class="fas fa-graduation-cap"
-                    style=padding-right:10px></i>Join Us</a></p>
+              <p><a href=./post/ class="btn btn-light btn-lg mt-3"><i class="fas fa-graduation-cap"
+                    style=padding-right:10px></i>Learn more</a></p>
             </div>
           </div>
         </div>
@@ -151,28 +200,34 @@
           class=carousel-control-next-icon></span>
         <span class=sr-only>Next</span></a>
     </section>
-    <section id=section-features class="home-section wg-features">
-      <div class=home-section-bg></div>
-      <div class=container>
-        <div class="row featurette">
-          <div class="col-md-12 section-heading">
-            <h1>学术带头人介绍</h1>
+
+
+    <div class="container-tow-col">
+      <div class="card-tow-col">
+          <img src="./media/pic.png" alt="学术带头人">
+          <div class="content-tow-col">
+              <div class="title-tow-col">I&V Analyse Group</div>
+              <div class="subtitle-tow-col">学术带头人 ▼</div>
+              <div class="description-tow-col">
+                  刘静，
+              </div>
+              <button class="button-tow-col" onclick="window.location.href='./people/';">了解更多</button>
           </div>
-          <div class=col-md-12>简介</div>
-        </div>
       </div>
-    </section>
-    <section id=section-features class="home-section wg-features">
-      <div class=home-section-bg></div>
-      <div class=container>
-        <div class="row featurette">
-          <div class="col-md-12 section-heading">
-            <h1>实验室介绍</h1>
+      <div class="card-tow-col">
+          <img src="./media/pic.png" alt="招聘">
+          <div class="content-tow-col">
+              <div class="title-tow-col">Talent Recruitment</div>
+              <div class="subtitle-tow-col">招生信息 ▼</div>
+              <div class="description-tow-col">
+                  
+              </div>
+              <button class="button-tow-col" onclick="window.location.href='./contact/';">加入我们</button>
           </div>
-          <div class=col-md-12>简介</div>
-        </div>
       </div>
-    </section>
+  </div>
+
+
   </div>
   <div class=page-footer>
     <div class=container>

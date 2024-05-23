@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双栏页面示例</title>
+    <style>
+        .container-tow-col {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card-tow-col {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 500px;
+        }
+        .card-tow-col img{
+            border-radius: 10px;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .content-tow-col {
+            flex: 1;
+        }
+        .title-tow-col {
+            color: #1a3e9a;
+            font-weight: bold;
+        }
+        .subtitle-tow-col {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .description-tow-col {
+            margin-bottom: 20px;
+        }
+        .button-tow-col {
+            background-color: #00a859;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-tow-col">
+        <div class="card-tow-col">
+            <img src="./media/blank.png" alt="学术带头人">
+            <div class="content-tow-col">
+                <div class="title-tow-col">THUNLP Academic Leader</div>
+                <div class="subtitle-tow-col">学术带头人 ▼</div>
+                <div class="description-tow-col">
+                    孙茂松，清华大学计算机科学与技术系长聘教授，清华大学人工智能研究院常务副院长，清华大学计算机学位评定分委员会主任。欧洲人文和自然科学院外籍院士，国际计算语言学学会会士，中国人工智能学会会士，中国中文信息学会会士。
+                </div>
+                <button class="button-tow-col">了解更多</button>
+            </div>
+        </div>
+        <div class="card-tow-col">
+            <img src="./media/blank.png" alt="英才招聘">
+            <div class="content-tow-col">
+                <div class="title-tow-col">Talent Recruitment</div>
+                <div class="subtitle-tow-col">英才招聘 | 职能团队 ▼</div>
+                <div class="description-tow-col">
+                    职能团队是实验室的坚实后盾，欢迎加入！总有有趣的问题等你解决，总有更好的构思等你实现。
+                </div>
+                <button class="button-tow-col">加入我们</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
